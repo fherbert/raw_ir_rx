@@ -41,7 +41,8 @@
 
 
 # MCU name
-MCU = attiny2313
+#MCU = attiny2313
+MCU = atmega128
 #MCU = attiny13
 
 # Processor frequency.
@@ -104,7 +105,7 @@ OBJDIR = .
 
 # List C source files here. (C dependencies are automatically generated.)
 SRC = $(TARGET).c
-SRC += lib/uart.c
+#SRC += lib/uart.c
 
 # List C++ source files here. (C dependencies are automatically generated.)
 CPPSRC =
