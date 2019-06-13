@@ -1,3 +1,11 @@
+*.eep
+*.cof
+*.map
+*.sym
+*.lss
+*.lst
+*.s
+
 # Prerequisites
 *.d
 
