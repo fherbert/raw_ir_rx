@@ -1,0 +1,52 @@
+   1               		.file	"main.c"
+   2               	__SP_L__ = 0x3d
+   3               	__SREG__ = 0x3f
+   4               	__tmp_reg__ = 0
+   5               	__zero_reg__ = 1
+   6               		.text
+   7               	.Ltext0:
+   8               		.cfi_sections	.debug_frame
+   9               		.section	.text.startup,"ax",@progbits
+  10               	.global	main
+  12               	main:
+  13               	.LFB0:
+  14               		.file 1 "main.c"
+   1:main.c        **** #include <avr/io.h>
+   2:main.c        **** #include <avr/interrupt.h>
+   3:main.c        **** //#include "lib/uart.h"
+   4:main.c        **** #include "main.h"
+   5:main.c        **** 
+   6:main.c        **** //#define UART_BAUD_RATE 9600
+   7:main.c        **** #define NUMPERIODS 8 // how many raw periods can we capture
+   8:main.c        **** 
+   9:main.c        **** volatile uint16_t data[NUMPERIODS]; // store the received pulses
+  10:main.c        **** 
+  11:main.c        **** 
+  12:main.c        **** //main program
+  13:main.c        **** int main(void)
+  14:main.c        **** {
+  15               		.loc 1 14 0
+  16               		.cfi_startproc
+  17               	/* prologue: function */
+  18               	/* frame size = 0 */
+  19               	/* stack size = 0 */
+  20               	.L__stack_usage = 0
+  21               	.L2:
+  22 0000 00C0      		rjmp .L2
+  23               		.cfi_endproc
+  24               	.LFE0:
+  26               		.comm	data,16,1
+  27               		.text
+  28               	.Letext0:
+  29               		.file 2 "/usr/local/CrossPack-AVR-20131216/avr/include/stdint.h"
+DEFINED SYMBOLS
+                            *ABS*:00000000 main.c
+/var/folders/4x/xsbdfjtn5nvdsr360flyv9_40000gp/T//cc8tJwl8.s:2      *ABS*:0000003d __SP_L__
+/var/folders/4x/xsbdfjtn5nvdsr360flyv9_40000gp/T//cc8tJwl8.s:3      *ABS*:0000003f __SREG__
+/var/folders/4x/xsbdfjtn5nvdsr360flyv9_40000gp/T//cc8tJwl8.s:4      *ABS*:00000000 __tmp_reg__
+/var/folders/4x/xsbdfjtn5nvdsr360flyv9_40000gp/T//cc8tJwl8.s:5      *ABS*:00000001 __zero_reg__
+/var/folders/4x/xsbdfjtn5nvdsr360flyv9_40000gp/T//cc8tJwl8.s:12     .text.startup:00000000 main
+                            *COM*:00000010 data
+
+UNDEFINED SYMBOLS
+__do_clear_bss
