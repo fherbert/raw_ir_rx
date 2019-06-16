@@ -105,7 +105,7 @@ OBJDIR = .
 
 # List C source files here. (C dependencies are automatically generated.)
 SRC = $(TARGET).c
-#SRC += lib/uart.c
+SRC += lib/uart.c
 
 # List C++ source files here. (C dependencies are automatically generated.)
 CPPSRC =
